@@ -16,7 +16,7 @@ function handleClick(e) {
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Throwing_a_generic_error */
 
 function greet(timeString){
-  time = parseFloat(timeString.split())
+  time = parseInt(timeString.split(':')[0])
   if(time < 12){
     return 'Good Morning'
   }
